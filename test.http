@@ -1,0 +1,41 @@
+
+###
+POST http://localhost:8090/api/products
+X-Api-Key: SECRET
+Content-Type: application/json
+Accept: application/json
+
+{
+  "id" : "A0011",
+  "name" : "MacBook Pro M1 13",
+  "price" : 21000000,
+  "quantity" : 11
+}
+
+###
+GET http://localhost:8090/api/products/A0011
+X-Api-Key: SECRET
+Accept: application/json
+
+###
+GET http://localhost:8090/api/products
+X-Api-Key: SECRET
+Accept: application/json
+
+###
+PUT http://localhost:8090/api/products/A0011
+X-Api-Key: SECRET
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name" : "MacBook Pro M1 16",
+  "price" : 21000000,
+  "quantity" : 11
+}
+
+###
+DELETE http://localhost:8090/api/products/A0011
+X-Api-Key: SECRET
+Accept: application/json
+
